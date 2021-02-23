@@ -1,0 +1,58 @@
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list_empty .list__content {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__header {
+    display: grid;
+    grid-gap: 8px;
+    width: 100%;
+    position: relative;
+}
+
+.list__header__item {
+    padding: 8px;
+    background-color: #61dafb;
+}
+
+.list__header_sticky {
+    position: sticky;
+    top: 0;
+}
+
+.list__content {
+    width: 100%;
+    overflow: auto;
+}
+
+.list__content__row {
+    display: grid;
+
+    transition: all 0.3ms ease-in;
+}
+
+.list__content__row:nth-child(odd) {
+    background-color: azure;
+}
+
+.list__content__row:hover {
+    background-color: #7affff;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.list__content__row_disabled:hover {
+    background-color: unset;
+    cursor: default;
+    pointer-events: none;
+}

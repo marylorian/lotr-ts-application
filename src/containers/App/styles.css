@@ -1,0 +1,24 @@
+.app {
+  min-height: calc(100vh - 42px);
+}
+
+.app__header {
+  width: 100%;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.app__list-wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app__header__title {
+  padding: 32px;
+}
+
+.app__copyright {
+  position: relative;
+  bottom: 0;
+}
+
