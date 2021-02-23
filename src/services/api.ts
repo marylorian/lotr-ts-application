@@ -6,7 +6,7 @@ const instance = axios.create({
     withCredentials: false,
     headers: {
         'Cache-Control': 'no-cache',
-        'Authorization': 'Bearer TcR3AbJGzhm9R_gyK_0h'
+        'Authorization': `Bearer ${process.env.REACT_APP_API_TOKEN}`
     },
     transformResponse: (data) => {
         let parsedData
